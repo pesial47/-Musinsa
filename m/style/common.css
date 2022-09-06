@@ -1,0 +1,247 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
+@font-face {
+    font-family: "AcademySansStencil";
+    src: url(../font/AcademySansStencil.ttf) format("truetype"),
+    url(../font/AcademySansStencil.woff) format("woff"),
+    url(../font/AcademySansStencil.woff2) format("woff2");
+}
+@font-face {
+    font-family: "AcademySansStencil-B";
+    src: url(../font/AcademySansStencil-Bold.woff) format("woff");
+}
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+}
+:root{
+    --text-color:#555;
+    --tit-color:#111;
+    --sub-color:#777;
+    --foint-color:#0078ff;
+    --swiper-theme-color:#fff;
+
+    --space10:10px;
+    --space45:45px;
+    --space60:60px;
+}
+.foint_color{
+    color:#0078ff;
+}
+html{
+    color: var(--tit-color);
+    font-size: 14px;
+    font-family: "pretendard";
+}
+body{
+    position: relative;
+    height: 100%;
+    overflow-x: hidden;
+}
+ul{list-style: none;}
+a{
+    text-decoration: none; 
+    color:inherit;
+}
+a, span, i{
+    display: inline-block;
+}
+img, frame{
+    max-width: 100%;
+    vertical-align: middle;
+}
+input, textarea, select, button, fieldset{
+    -webkit-appearance:none;
+    border-radius: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+h1, h2, h3, h4, h5, h6{
+    color: #111;
+    line-height: 1;
+}
+.inner{
+    position: relative;
+    margin: 0 20px;
+}
+.header_in{
+    position: relative;
+    min-width: 320px;
+    margin: 0 auto;
+    
+}
+h3{
+    font-size: 20px;
+}
+
+/* header */
+#header{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#header .header_top{
+    height: 62px;
+    background: #000;
+    text-align: center;
+}
+#header .header_top .logo a{
+    display: inline-block;
+    padding: 15px;
+    vertical-align: middle;
+}
+#header .header_top .logo img{
+    width: 35%;
+}
+#header .header_menu{
+    position: absolute;
+    top: 15px;
+    width: 100%;
+}
+#header .header_menu img{
+    width: 80%;
+}
+#header .left_menu{
+    margin-left:10px;
+}
+#header .right_menu{
+    margin-right:10px;
+}
+
+#header .top_menu_area{
+    margin-left:15px;
+}
+#header .top_menu li{
+    padding: 15px 0;
+}
+#header .top_menu li a{
+    /* width: 50px; */
+    display: block;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-color);
+}
+#header .top_menu li .top_s{
+    color: var(--foint-color);
+}
+
+
+/* footer */
+#footer{
+    /* margin: 0 auto 70px; */
+    margin: 0 auto ;
+    padding: 40px 0 80px;
+    font-size: 12px;
+    text-align: center;
+    background: #000;
+    color: #ccc;
+}
+#footer p{
+    padding-top: var(--space10);
+}
+#footer .ft_cs .cs{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+}
+#footer .cs a{
+    width: 33%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px var(--space10);
+    margin-right: 5px;
+}
+#footer .cs span:nth-last-child(1){
+    margin-right: 0;
+}
+#footer .ft_infor span{
+    padding: 0 5px;
+}
+#footer .ft_infor a{
+    padding-top: var(--space10);
+}
+#footer .ft_infor .person span{
+    color: #fff;
+    font-weight: 500;
+    text-decoration: underline;
+}
+#footer .ft_bottom{
+    color: #fff;
+}
+#footer .ft_bottom .infor{
+    padding: 30px 0 10px;
+}
+#footer .ft_bottom address{
+    font-style: normal;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* top_button */
+#btn_fixed{
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 900;
+    
+}
+.top_btn{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    box-shadow: 0 0 4px rgba(130, 130, 130, 0.5);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 45px;
+}
+.top_btn img{
+    /* vertical-align: middle; */
+    width: 45%;
+}
